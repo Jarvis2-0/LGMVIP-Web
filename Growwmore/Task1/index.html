@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppons&display=swap" rel="stylesheet">
+    <!--font for css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"  crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="main.js" defer></script>
+    <title>To-Do List WebApp</title>
+</head>
+<!-- Created By Akshay Pawar -->
+<body>
+    <div class="todo-container">
+        <header>
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h3 class="animate-charcter">My ToDo List</h3>
+                  </div>
+                </div>
+              </div>
+        </header>
+        <!--edit the task from here-->
+        <form action="" id="todo-form">
+            <p>Add your Task Here..</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Type here your next task">
+                <button type="submit">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <!--Add task-->
+        <form action="" id="edit-form" class="hide">
+            <p>Edit Your Task.. </p>
+                <div class="form-control">
+                    <input type="text" id="edit-input" placeholder="Type here your task">
+                    <button type="submit">
+                        <i class="fa fa-check-square-o"></i>
+                    </button>
+                </div>
+
+                <button type="button" id="cancel-edit-btn">Cancel</button>
+        </form>
+
+        <!--Task List-->
+        <div class="todo-list" id="todo-list">
+            <div class="todo">
+                <h3> Default Tasks..</h3>
+                <button class="finish-todo">
+                    <i class="fa fa-check-circle-o"></i>
+                </button>
+                <button class="edit-todo">
+                    <i class="fa fa-pencil-square-o"></i>
+                </button>
+                <button class="remove-todo">
+                    <i class="fa fa-trash-o"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>      
+</body>
+</html>
+
+
